@@ -17,7 +17,7 @@ from requests.exceptions import ReadTimeout
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 # Telegram bot token and channel IDs
-TOKEN = '7778635938:AAFmldFFBM6xI2nFCedmrz6MHPWJqFjS8g8'  # Replace with your actual bot token
+TOKEN = '7638678019:AAFo4n52P7JhZpeEbtFA1ZRDhfOcj81XiaM'  # Replace with your actual bot token
 CHANNEL_ID = '-1002437601214'  # Replace with your specific channel or group ID for attacks
 FEEDBACK_CHANNEL_ID = '-1002468774352'  # Replace with your specific channel ID for feedback
 message_queue = []
